@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/6f230d7adc.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mainContainer">
+
+    <div id="header">
+        <h1>Memory Game!</h1>
+        <div id="counters">
+        <div id="count">
+            Timer <br>
+            <p id="num">45</p>
+        </div>
+        <div id="points">
+            Points
+            <p id="pointCount">0</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="startContainer" class="startEnd">
+        <div id="start">
+            <p class="instructions">
+            <div id="how">How To Play </div>
+                <div id="instructions">
+                Click  on two cards to turn them over, if they match you have
+                a pair! If the cards do not match click on another pair
+                until you have a match! the game is complete when all the pairs are
+                found. You have 45 seconds to find them all!
+                </div>
+            </p>
+            <button id="button" class="buttons">Start</button>
+            <button id="reset" class="buttons">Reset</button>
+        </div>
+    </div>
+
+<div id="myFrame">
+    <div class="memoryGame">
+        <div class="memoryCard" data-animal="cat">
+            <img src="img/cat.svg" alt="cat" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+  
+   
+        <div class="memoryCard" data-animal="cat">
+            <img src="img/cat.svg" alt="cat" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+
+
+
+
+        <div class="memoryCard" data-animal="dog">
+            <img src="img/dog.svg" alt="dog" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+ 
+
+        <div class="memoryCard" data-animal="dog">
+            <img src="img/dog.svg" alt="dog" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+  
+
+
+   
+        <div class="memoryCard" data-animal="frog">
+            <img src="img/frog.svg" alt="frog" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+  
+        <div class="memoryCard" data-animal="frog">
+            <img src="img/frog.svg" alt="frog" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+ 
+
+
+   
+        <div class="memoryCard" data-animal="pig">
+            <img src="img/pig.svg" alt="pig" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+
+        <div class="memoryCard" data-animal="pig">
+            <img src="img/pig.svg" alt="pig" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+
+
+
+        <div class="memoryCard" data-animal="rat">
+            <img src="img/rat.svg" alt="rat" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+
+ 
+        <div class="memoryCard" data-animal="rat">
+            <img src="img/rat.svg" alt="rat" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+
+
+
+        <div class="memoryCard" data-animal="snail">
+            <img src="img/snail.svg" alt="snail" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+
+   
+        <div class="memoryCard" data-animal="snail">
+            <img src="img/snail.svg" alt="snail" class="front">
+            <img src="img/back.svg" alt="back" class="back">
+        </div>
+    </div>
+</div>
+
+</div>
+    
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

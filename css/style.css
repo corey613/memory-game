@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#mainContainer{
+  height: 100vh;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: space-around;
+}
+
+#counters {
+  width: 230px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#num, #pointCount {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#points, #count {
+  height: 80px;
+  width: 80px;
+  margin: 10px 10px;
+  text-align: center;
+  padding: 15px 19px;
+  background-color: green;
+  border-radius: 50px;
+}
+
+.startEnd{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start {
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
+  background-color: #A0CCDA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px #17323B;
+  border-radius: 30px;
+}
+
+
+#how {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  border-bottom: solid 3px #17323B;
+}
+
+#instructions {
+  width: 260px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+
+
+ 
+.buttons {
+  width: 200px;
+  height: auto;
+  margin: 25px;
+  background-color: #B6EFD4;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: solid 4px #17323B;
+  outline: none;
+}
+
+.buttons:hover {
+  animation: buttonColor 2s linear forwards;
+}
+
+#reset{
+  display: none;
+}
+
+.memoryGame {
+    display: none;
+    width: 440px;
+    height: 440px;
+    margin: auto;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memoryCard {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .memoryCard:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memoryCard.flip {
+    transform: rotateY(180deg);
+  }
+
+  
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #519e28;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+  }
+
+
+  @keyframes buttonColor {
+    from{
+     background-color:#B6EFD4;
+    }
+    to {
+      background-color: #7BC950;
+    }
+  }
+
+
+
+  @media screen and (max-width: 400px){
+    start {
+      width: 300px;
+      height: 300px;
+      margin-top: 40px;
+      background-color: #A0CCDA;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: solid 2px #17323B;
+      border-radius: 30px;
+    }
+    
+  }
