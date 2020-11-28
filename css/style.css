@@ -174,5 +174,11 @@
       border: solid 2px #17323B;
       border-radius: 30px;
     }
+      
+      .memoryGame {
+    display: none;
+    width: 320px;
+    height: 320px;
+  }
     
   }
